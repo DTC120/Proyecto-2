@@ -1,38 +1,47 @@
-.App {
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+.encabezado {
+  background-color: #CBF1FC;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.titulo_principal {
   text-align: center;
+  padding: 30px;
+  font-size: 60px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.descripcion {
+  text-align: center;
+  padding-bottom: 30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navegacion_principal {
+  background-color: #000000;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navegacion {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
 }
-
-.App-link {
-  color: #61dafb;
+.enlace {
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  padding: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.enlace:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+.cuenta {
+  float: inline-end;
+  margin: 3px;
+  padding: 3px;
+  text-decoration: none;
+  color: #000000;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.cuenta:hover {
+  background-color: rgba(255, 255, 255, 0.5);
 }
