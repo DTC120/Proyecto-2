@@ -2,6 +2,9 @@
   margin: 0;
   box-sizing: border-box;
 }
+body {
+  background-color: #FEF5E7;
+}
 .encabezado {
   background-color: #CBF1FC;
   font-family: Arial, Helvetica, sans-serif;
@@ -17,6 +20,7 @@
 }
 .navegacion_principal {
   background-color: #000000;
+  margin: 10px 0;
 }
 .navegacion {
   display: flex;
@@ -33,15 +37,125 @@
   background-color: #ffffff;
   color: #000000;
 }
+.enlace-activo {
+  background-color: #ffffff;
+  color: #000000;
+}
+.login-signup{
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
 .cuenta {
-  float: inline-end;
   margin: 3px;
   padding: 3px;
   text-decoration: none;
+  font-size: 15px;
   color: #000000;
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
+  margin-left: 2px;
 }
 .cuenta:hover {
   background-color: rgba(255, 255, 255, 0.5);
+}
+.usuario-icono{
+  width: 18px;
+  margin-right: 2px;
+}
+.carrito {
+  position: fixed;
+  right: 10px;
+  padding: 6px;
+  background-color: #ffffff;
+  border-style: solid;
+  border-color: #000000;
+  border-radius: 50px;
+}
+.carrito-icono {
+  width: 25px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+.anuncio1 {
+  background-color: #FFA212;
+  grid-column: 1 / 3;
+  margin: 10px 80px;
+  text-align: center;
+  padding: 10rem;
+  border-radius: 10px;
+}
+.anuncio2 {
+  background-color: #7ffd47;
+  text-align: center;
+  margin-left: 20px;
+  padding: 7rem 1rem;
+  border-radius: 10px;
+}
+.anuncio3 {
+  background-color: #7ffd47;
+  text-align: center;
+  margin-right: 20px;
+  padding: 7rem 1rem;
+  border-radius: 10px;
+}
+.flex {
+  display: flex;
+  margin: 30px 20px;
+}
+.texto1 {
+  margin-right: 20px;
+  text-align: justify;
+}
+.anuncio4 {
+  background-color: #ffd700;
+  text-align: center;
+  margin-right: 10px;
+  padding: 20rem 5rem;
+  border-radius: 10px;
+}
+.pieDepagina {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+}
+.copyright {
+  text-align: center;
+}
+address {
+  display: inline;
+  color: #0074FF;
+  text-decoration: underline;
+}
+.iconos-pieDepagina {
+  width: 15px;
+  margin-right: 5px;
+}
+.pieDepagina-centrado {
+  text-align: center;
+  margin: 10px;
+}
+.iconos-redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  margin: 20px;
+}
+.tyc {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+  gap: 20px;
+}
+.enlace-tyc {
+  text-decoration: none;
+  color: #ffffff;
+  padding: 3px 5px;
+}
+.enlace-tyc:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
