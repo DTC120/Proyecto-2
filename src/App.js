@@ -11,18 +11,21 @@ import "animate.css";
 function App() {
   return (
     <div className="App">
-      <BrowserRouter>
+      <header className="encabezado">
         <Encabezado />
-        <Navegacion />
+      </header>
+      <body>
+        <BrowserRouter>
+          <Navegacion />
 
-        <Routes>
-          <Route path="/" element={<Inicio />} />
-          <Route path="/productos" element={<Productos />} />
-          <Route path="/sobre-nosotros" element={<Nosotros />} />
-        </Routes>
-      </BrowserRouter>
-
-      <PiedePagina />
+          <Routes>
+            <Route path="/" element={<Inicio />} />
+            <Route path="/productos" element={<Productos />} />
+            <Route path="/sobre-nosotros" element={<Nosotros />} />
+          </Routes>
+        </BrowserRouter>
+        <PiedePagina />
+      </body>
     </div>
   );
 }

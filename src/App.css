@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: #fef5e7;
-}
-
 /* Encabezado */
 .encabezado {
   background-color: #cbf1fc;
@@ -105,28 +101,25 @@ body {
 }
 
 .anuncio1 {
-  background-color: #ffa212;
   grid-column: 1 / 3;
   margin: 10px 80px;
-  text-align: center;
   padding: 10rem;
-  border-radius: 10px;
 }
 
 .anuncio2 {
-  background-color: #7ffd47;
-  text-align: center;
   margin-left: 20px;
   padding: 7rem 1rem;
-  border-radius: 10px;
 }
 
 .anuncio3 {
-  background-color: #7ffd47;
-  text-align: center;
   margin-right: 20px;
   padding: 7rem 1rem;
-  border-radius: 10px;
+}
+
+.anuncio1, .anuncio2, .anuncio3, .anuncio4 {
+  background-color: #f0fb1adf;
+  text-align: center;
+  border: outset 5px #C0C0C0;
 }
 
 .flex {
@@ -140,11 +133,8 @@ body {
 }
 
 .anuncio4 {
-  background-color: #ffd700;
-  text-align: center;
   margin-right: 10px;
   padding: 20rem 5rem;
-  border-radius: 10px;
 }
 
 /* Cuerpo de pagina "Productos" */
@@ -172,6 +162,11 @@ body {
   border-bottom: solid 1px rgb(166, 166, 166);
   display: flex;
   justify-content: space-between;
+  padding: 5px;
+}
+
+.titulo-filtro:hover {
+  background-color: rgb( 244, 244, 244);
 }
 
 .filtro-label{
@@ -187,6 +182,9 @@ body {
 /* Molde de los productos */
 .boton-producto {
   cursor: pointer;
+  border: solid 1px;
+  border-color: rgba(0, 0, 0, 0.1);
+  padding: 10px;
 }
 
 .navlink {
@@ -214,6 +212,33 @@ body {
 
 .titulo-producto, .descripcion-producto {
   margin-bottom: 10px;
+}
+
+.botonesDelproducto {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.agregar-producto, .comprar-producto {
+  padding: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  font-family: "Poppins", sans-serif;
+}
+
+.agregar-producto {
+  background-color: #BB6EFF;
+}
+
+.comprar-producto {
+  background-color: #ffa212;
+}
+
+.agregar-producto:hover, .comprar-producto:hover {
+  color: #ffffff;
 }
 
 /* Navegación entre paginas de productos */

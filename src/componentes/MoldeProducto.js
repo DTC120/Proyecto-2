@@ -16,6 +16,10 @@ export function MoldeProducto() {
           <p className="precio-producto">$3,000.00</p>
         </div>
       </NavLink>
+      <div className="botonesDelproducto">
+        <button className="agregar-producto">Agregar al carrito</button>
+        <button className="comprar-producto">Comprar ahora</button>
+      </div>
     </div>
   );
 }

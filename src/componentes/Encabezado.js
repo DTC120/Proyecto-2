@@ -3,7 +3,7 @@ import { Carrito } from "./Carrito";
 
 export function Encabezado() {
   return (
-    <header className="encabezado">
+    <div>
       <div className="login-signup">
         <BsFillPersonFill />
         <a className="cuenta" href="#">
@@ -29,6 +29,6 @@ export function Encabezado() {
         <br />
         sunt in culpa qui officia deserunt mollit anim id est laborum.
       </p>
-    </header>
+    </div>
   );
 }

@@ -1,25 +1,25 @@
 export function Inicio() {
   return (
-    <body>
+    <div>
       <div className="grid-Inicio">
         <div className="anuncio1">
           <h3>
-            Aquí va un anuncio promocionando artículos nuevos y la novedad del
-            día
+            Aquí va un anuncio promocionando artículos nuevos o la novedad del
+            día.
           </h3>
         </div>
 
         <div className="anuncio2">
           <h3>
-            Aquí va un anuncio promocionando artículos nuevos y la novedad del
-            día
+            Aquí va un anuncio promocionando artículos nuevos o la novedad del
+            día.
           </h3>
         </div>
 
         <div className="anuncio3">
           <h3>
-            Aquí va un anuncio promocionando artículos nuevos y la novedad del
-            día
+            Aquí va un anuncio promocionando artículos nuevos o la novedad del
+            día.
           </h3>
         </div>
       </div>
@@ -146,6 +146,6 @@ export function Inicio() {
           <h3>Aquí va un anuncio promocionando artículos.</h3>
         </div>
       </div>
-    </body>
+    </div>
   );
 }
