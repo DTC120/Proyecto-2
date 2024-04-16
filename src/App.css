@@ -2,30 +2,39 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
-  background-color: #FEF5E7;
+  background-color: #fef5e7;
 }
+
+/* Encabezado */
 .encabezado {
-  background-color: #CBF1FC;
+  background-color: #cbf1fc;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .titulo_principal {
   text-align: center;
   padding: 30px;
   font-size: 60px;
 }
+
 .descripcion {
   text-align: center;
   padding-bottom: 30px;
 }
-.navegacion_principal {
+
+/* Navegación */
+.navegacion-principal {
   background-color: #000000;
-  margin: 10px 0;
+  margin-bottom: 10px;
 }
+
 .navegacion {
   display: flex;
   justify-content: space-evenly;
 }
+
 .enlace {
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -33,19 +42,24 @@ body {
   color: #ffffff;
   padding: 10px;
 }
+
 .enlace:hover {
   background-color: #ffffff;
   color: #000000;
 }
-.enlace-activo {
+
+.activo {
   background-color: #ffffff;
   color: #000000;
 }
-.login-signup{
+
+/* Inicio de sesión/Creación de cuenta */
+.login-signup {
   display: flex;
   justify-content: end;
   align-items: center;
 }
+
 .cuenta {
   margin: 3px;
   padding: 3px;
@@ -56,38 +70,49 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin-left: 2px;
 }
+
 .cuenta:hover {
   background-color: rgba(255, 255, 255, 0.5);
 }
-.usuario-icono{
-  width: 18px;
-  margin-right: 2px;
-}
-.carrito {
+
+/* Botón Carrito */
+.carrito-icono {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
+  cursor: pointer;
   position: fixed;
   right: 10px;
-  padding: 6px;
-  background-color: #ffffff;
-  border-style: solid;
-  border-color: #000000;
-  border-radius: 50px;
+  font-size: 30px;
+  color: #000000;
+  z-index: 9999;
+  width: 40px;
+  height: 40px;
 }
-.carrito-icono {
-  width: 25px;
+.carrito-icono:hover {
+  animation: swing;
+  animation-duration: 2s;
 }
-.grid {
+
+/* Cuerpo de pagina "Inicio" */
+.grid-Inicio {
   display: grid;
   grid-template-columns: auto auto;
   gap: 20px;
 }
+
 .anuncio1 {
-  background-color: #FFA212;
+  background-color: #ffa212;
   grid-column: 1 / 3;
   margin: 10px 80px;
   text-align: center;
   padding: 10rem;
   border-radius: 10px;
 }
+
 .anuncio2 {
   background-color: #7ffd47;
   text-align: center;
@@ -95,6 +120,7 @@ body {
   padding: 7rem 1rem;
   border-radius: 10px;
 }
+
 .anuncio3 {
   background-color: #7ffd47;
   text-align: center;
@@ -102,14 +128,17 @@ body {
   padding: 7rem 1rem;
   border-radius: 10px;
 }
+
 .flex {
   display: flex;
   margin: 30px 20px;
 }
+
 .texto1 {
   margin-right: 20px;
   text-align: justify;
 }
+
 .anuncio4 {
   background-color: #ffd700;
   text-align: center;
@@ -117,27 +146,136 @@ body {
   padding: 20rem 5rem;
   border-radius: 10px;
 }
+
+/* Cuerpo de pagina "Productos" */
+.grid-Productos {
+  display: grid;
+  grid-template-columns: 15rem auto auto auto auto;
+  gap: 30px;
+  margin: 30px;
+}
+
+/* Barra lateral de filtros */ 
+.barra-filtros {
+  grid-row: 1 / 5;
+}
+
+.grupo-filtro {
+  margin: 30px 0;
+  font-size: 20px;
+}
+
+.titulo-filtro {
+  font-weight: bold;
+  margin-bottom: 5px;
+  cursor: pointer;
+  border-bottom: solid 1px rgb(166, 166, 166);
+  display: flex;
+  justify-content: space-between;
+}
+
+.filtro-label{
+  display: block;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.filtro-input {
+  margin-right: 10px;
+}
+
+/* Molde de los productos */
+.boton-producto {
+  cursor: pointer;
+}
+
+.navlink {
+  text-align: justify;
+  text-decoration: none;
+  color: #000000;
+  font-size: 20px;
+}
+
+.boton-producto:hover {
+  animation: pulse;
+  animation-duration: 2s;
+  border-radius: 10px;
+  box-shadow: 5px 5px 20px rgb(129, 129, 129);
+}
+
+.imgProducto {
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.producto {
+  margin: 10px;
+}
+
+.titulo-producto, .descripcion-producto {
+  margin-bottom: 10px;
+}
+
+/* Navegación entre paginas de productos */
+.nav-productos {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 10px;
+  margin-right: 15px;
+}
+
+.nav-siguiente {
+  border: none;
+  background-color: transparent;
+  font-size: 17px;
+  cursor: pointer;
+}
+
+.nav-siguiente_activo, .nav-siguiente:hover{
+  color: #0074ff;
+  text-decoration: underline;
+  text-shadow: 2px 2px 5px rgb(129, 129, 129);
+}
+
+/* Pie de pagina */
 .pieDepagina {
   background-color: #000000;
   color: #ffffff;
   padding: 20px;
+  margin-top: 10px;
 }
+
 .copyright {
   text-align: center;
 }
+
 address {
   display: inline;
-  color: #0074FF;
+  color: #0074ff;
   text-decoration: underline;
 }
+
 .iconos-pieDepagina {
-  width: 15px;
+  font-size: 20px;
   margin-right: 5px;
 }
+
+.telefono {
+  display: flex;
+  align-items: center;
+}
+
+.correo {
+  display: flex;
+  align-items: center;
+}
+
 .pieDepagina-centrado {
   text-align: center;
   margin: 10px;
 }
+
 .iconos-redes {
   display: flex;
   justify-content: center;
@@ -145,17 +283,24 @@ address {
   gap: 80px;
   margin: 20px;
 }
+
+.icono-red {
+  font-size: 70px;
+}
+
 .tyc {
   margin-top: 30px;
   display: flex;
   justify-content: end;
   gap: 20px;
 }
+
 .enlace-tyc {
   text-decoration: none;
   color: #ffffff;
   padding: 3px 5px;
 }
+
 .enlace-tyc:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
