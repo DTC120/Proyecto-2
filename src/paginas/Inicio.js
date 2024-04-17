@@ -1,7 +1,8 @@
 export function Inicio() {
   return (
-    <div>
-      <div className="grid-Inicio">
+    <main>
+      <h2 className="subtitulo-inicio">"Titulo con frase promocional"</h2>
+      <section className="grid-Inicio">
         <div className="anuncio1">
           <h3>
             Aquí va un anuncio promocionando artículos nuevos o la novedad del
@@ -22,10 +23,10 @@ export function Inicio() {
             día.
           </h3>
         </div>
-      </div>
+      </section>
 
       <div className="flex">
-        <div className="texto1">
+        <section className="texto1">
           <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat
@@ -140,12 +141,12 @@ export function Inicio() {
             Pellentesque habitant morbi tristique senectus et. Id semper risus
             in hendrerit gravida.
           </p>
-        </div>
+        </section>
 
-        <div className="anuncio4">
+        <aside className="anuncio4">
           <h3>Aquí va un anuncio promocionando artículos.</h3>
-        </div>
+        </aside>
       </div>
-    </div>
+    </main>
   );
 }

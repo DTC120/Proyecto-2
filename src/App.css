@@ -94,6 +94,11 @@
 }
 
 /* Cuerpo de pagina "Inicio" */
+.subtitulo-inicio {
+  text-align: center;
+  padding: 20px;
+}
+
 .grid-Inicio {
   display: grid;
   grid-template-columns: auto auto;
@@ -263,12 +268,26 @@
   text-shadow: 2px 2px 5px rgb(129, 129, 129);
 }
 
+/* Cuerpo de pagina "Sobre Nosotros" */
+.cuerpo-nostros {
+  text-align: center;
+}
+
+.titulo-nosotros {
+  font-size: 2rem;
+  padding: 5rem;
+}
+
+.contenido-nosotros {
+  background-color: #d99837;
+  padding: 3rem 8rem;
+}
+
 /* Pie de pagina */
 .pieDepagina {
   background-color: #000000;
   color: #ffffff;
   padding: 20px;
-  margin-top: 10px;
 }
 
 .copyright {

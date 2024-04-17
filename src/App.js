@@ -24,7 +24,9 @@ function App() {
             <Route path="/sobre-nosotros" element={<Nosotros />} />
           </Routes>
         </BrowserRouter>
-        <PiedePagina />
+        <footer>
+          <PiedePagina />
+        </footer>
       </body>
     </div>
   );

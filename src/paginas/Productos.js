@@ -6,8 +6,8 @@ import { Desplazamiento } from "../componentes/Desplazamiento";
 export function Productos() {
   return (
     <div>
-      <div className="grid-Productos">
-        <div className="barra-filtros">
+      <main className="grid-Productos">
+        <aside className="barra-filtros">
           <h2>Filtros</h2>
           <Desplazamiento
             title="Categorías"
@@ -47,14 +47,14 @@ export function Productos() {
             title="Marcas"
             options={["Marca 1", "Marca 2", "Marca 3", "Marca 4", "Marca 5"]}
           />
-        </div>
+        </aside>
 
         {Array(16)
           .fill()
           .map((_, index) => (
             <MoldeProducto key={index} />
           ))}
-      </div>
+      </main>
 
       <div className="nav-productos">
         <button className="nav-siguiente nav-siguiente_activo">1</button>

@@ -7,7 +7,7 @@ import { AiFillYoutube } from "react-icons/ai";
 
 export function PiedePagina() {
   return (
-    <footer className="pieDepagina">
+    <div className="pieDepagina">
       <h3>"Aqui va el nombre de la empresa o logo"</h3>
       <br />
       <p>
@@ -53,6 +53,6 @@ export function PiedePagina() {
         &copy; 2024 Tienda Web, Todos los Derechos Reservados | Esta pagina web
         fue creada por Diego Hernandez y Diego Trejo.
       </p>
-    </footer>
+    </div>
   );
 }
