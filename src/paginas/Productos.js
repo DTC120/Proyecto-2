@@ -1,5 +1,4 @@
 import { IoIosArrowForward } from "react-icons/io";
-import "animate.css";
 import { MoldeProducto } from "../componentes/MoldeProducto";
 import { Desplazamiento } from "../componentes/Desplazamiento";
 

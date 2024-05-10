@@ -4,7 +4,7 @@ import imgProducto from "../img/img-producto.jpg";
 export function MoldeProducto() {
   return (
     <div className="boton-producto">
-      <NavLink className="navlink">
+      <NavLink className="navlink" to="#">
         <img className="imgProducto" src={imgProducto} alt="Producto" />
         <div className="producto">
           <h4 className="titulo-producto">"Nombre del producto"</h4>
